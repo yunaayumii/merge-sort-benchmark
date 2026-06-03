@@ -6,11 +6,12 @@ def merge(left: list, right: list):
 			merged.append(left.pop(0))
 		else:
 			merged.append(right.pop(0))
-	return merged
 		
 	# todo: handle remainig elements in left or right
 	merged.extend(left)
 	merged.extend(right)
+
+	return merged
 
 def merge_sort(data: list):
 	if len(data) <= 1:
