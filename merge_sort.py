@@ -1,12 +1,12 @@
 def merge_sort(data):
     # Base Case: If the list is 1 or 0 elements, it's already sorted
-    if # TODO: Check length of data
+    if len(data) == 0 or len(data) == 1: 
         return data
 
     # Divide: Find the midpoint and split the data
-    mid = # TODO: Calculate midpoint
-    left_half = # TODO: Slice data for left side
-    right_half = # TODO: Slice data for right side
+    mid = len(data) // 2
+    left_half = data[:mid]
+    right_half = data[mid:]
 
     # Recursive calls
     left_sorted = merge_sort(left_half)
